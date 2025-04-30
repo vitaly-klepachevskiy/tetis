@@ -1,0 +1,12 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+
+  &.light {
+    color: #fffefc;
+  }
+
+  &.dark {
+    color: #1c1b1e;
+  }
+}

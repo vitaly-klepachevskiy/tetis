@@ -1,7 +1,8 @@
 .hero {
-  background-image: url('/images/sections/main/hero.png');
+  background-image: url('/images/sections/main/heroLarge.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 800px;
 
   .description {
@@ -10,14 +11,41 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    gap: 22px;
 
     .title {
       text-align: center;
       font-size: 60px;
       font-weight: 300;
       line-height: 1.4;
-      width: 883px;
+      max-width: 880px;
       color: #fffefc;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+    background-image: url('/images/sections/main/heroMedium.png');
+    height: 660px;
+
+    .description {
+      .title {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .hero {
+    background-image: url('/images/sections/main/heroSmall.png');
+    height: 700px;
+
+    .description {
+      .title {
+        font-size: 24px;
+      }
     }
   }
 }

@@ -1,0 +1,39 @@
+.subTitle {
+  color: #a39e96;
+
+  &.normal {
+    padding-top: 28px;
+  }
+
+  &.compact {
+    padding-top: 12px;
+
+    .vertical & {
+      padding-top: 0;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .subTitle {
+    &.normal {
+      padding-top: 0;
+    }
+
+    &.compact {
+      padding-top: 8px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .subTitle {
+    &.normal {
+      padding-top: 0;
+    }
+
+    &.compact {
+      padding-top: 5px;
+    }
+  }
+}

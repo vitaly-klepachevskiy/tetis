@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.scss';
 import Header from '@/components/header/header';
+import Footer from '@/components/footer/footer';
 
 export const metadata: Metadata = {
   title: 'TETIS',
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body>
         <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -1,0 +1,101 @@
+.stages {
+  background-color: #f7f7f7;
+
+  .stages-container {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 60px;
+    gap: 50px;
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+
+      .item {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: end;
+        padding: 30px;
+        border: 1px solid #dcdcdd;
+
+        .description {
+          width: 100%;
+          max-width: 750px;
+          line-height: 1.5;
+        }
+      }
+    }
+
+    .buttons {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .stages {
+    .stages-container {
+      padding: 60px 30px;
+      gap: 30px;
+
+      .items {
+        gap: 12px;
+
+        .item {
+          gap: 15px;
+          padding: 15px;
+
+          .description {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .stages {
+    .stages-container {
+      position: relative;
+      padding: 60px 16px;
+      gap: 30px;
+
+      .items {
+        flex-direction: row;
+        gap: 8px;
+        overflow: auto;
+        scrollbar-width: none; /* для Firefox */
+        -ms-overflow-style: none; /* для IE и Edge */
+
+        .item {
+          flex-direction: column;
+          justify-content: start;
+          align-items: start;
+          min-width: 230px;
+          min-height: 245px;
+          gap: 15px;
+          padding: 10px;
+
+          .description {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .items::-webkit-scrollbar {
+        display: none; /* для Chrome, Safari и Opera */
+      }
+
+      .buttons {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+      }
+    }
+  }
+}
