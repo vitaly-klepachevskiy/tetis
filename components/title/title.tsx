@@ -8,12 +8,21 @@ interface Title {
   subTitle: string;
   isVertical?: boolean;
   type: 'compact' | 'normal';
+  theme?: 'light' | 'dark';
 }
 
-const Title = ({ children, subTitle, isVertical = false, type }: Title) => {
+const Title = ({
+  children,
+  subTitle,
+  theme = 'dark',
+  isVertical = false,
+  type,
+}: Title) => {
   return (
-    <div className={classNames('titles', type, { vertical: isVertical })}>
-      <span className={classNames('title', type)}>{children}</span>
+    <div
+      className={classNames('titles', type, theme, { vertical: isVertical })}
+    >
+      <span className="title">{children}</span>
       <SubTitle type={type}>{subTitle}</SubTitle>
     </div>
   );

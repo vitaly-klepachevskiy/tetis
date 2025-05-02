@@ -1,0 +1,35 @@
+.designers {
+  background-image: url('/images/sections/main/designersLarge.png');
+  min-height: 580px;
+
+  .designers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 86px 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .designers {
+    background-image: url('/images/sections/main/designersMedium.png');
+    min-height: 360px;
+
+    .designers-container {
+      gap: 30px;
+      padding: 60px 30px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .designers {
+    background-image: url('/images/sections/main/designersSmall.png');
+    min-height: 570px;
+
+    .designers-container {
+      gap: 30px;
+      padding: 60px 16px;
+    }
+  }
+}

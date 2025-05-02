@@ -3,24 +3,39 @@
   justify-content: space-between;
   width: 100%;
 
-  &.vertical {
-    flex-direction: column-reverse;
-    gap: 40px;
-  }
-
   .title {
     max-width: 785px;
     line-height: 1.5;
+  }
 
-    &.normal {
+  &.normal {
+    .title {
       font-weight: 300;
       font-size: 42px;
     }
+  }
 
-    &.compact {
+  &.compact {
+    .title {
       font-weight: 400;
       font-size: 24px;
     }
+  }
+
+  &.vertical {
+    flex-direction: column-reverse;
+
+    &.normal {
+      gap: 46px;
+    }
+
+    &.compact {
+      gap: 40px;
+    }
+  }
+
+  &.light {
+    color: #fffefc;
   }
 }
 
@@ -33,18 +48,26 @@
     &.normal {
       flex-direction: column-reverse;
       gap: 10px;
+
+      .title {
+        font-size: 32px;
+      }
+    }
+
+    &.compact {
+      .title {
+        font-size: 18px;
+      }
+    }
+
+    &.vertical {
+      &.normal {
+        gap: 12px;
+      }
     }
 
     .title {
       max-width: 570px;
-
-      &.normal {
-        font-size: 32px;
-      }
-
-      &.compact {
-        font-size: 18px;
-      }
     }
   }
 }
@@ -62,18 +85,26 @@
     &.normal {
       flex-direction: column-reverse;
       gap: 10px;
+
+      .title {
+        font-size: 22px;
+      }
+    }
+
+    &.compact {
+      .title {
+        font-size: 15px;
+      }
+    }
+
+    &.vertical {
+      &.normal {
+        gap: 10px;
+      }
     }
 
     .title {
       max-width: 100%;
-
-      &.normal {
-        font-size: 22px;
-      }
-
-      &.compact {
-        font-size: 15px;
-      }
     }
   }
 }

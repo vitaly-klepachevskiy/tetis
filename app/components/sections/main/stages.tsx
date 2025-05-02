@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Title from '@/components/title/title';
 import './stages.scss';
-import { Icon } from '../../ui/icon';
+import Icon from '../../../../components/ui/icon';
 
 const Stages = () => {
   const scrollRef = useRef<HTMLDivElement>(null);

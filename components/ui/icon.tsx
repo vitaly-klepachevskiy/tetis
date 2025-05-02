@@ -9,7 +9,7 @@ interface Icon {
   onClick?: () => void;
 }
 
-export function Icon(props: Icon) {
+export default function Icon(props: Icon) {
   const { name, theme, type, width, height, onClick } = props;
   return (
     <Image
