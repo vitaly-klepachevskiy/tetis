@@ -1,7 +1,9 @@
+'use client';
+
 import './footer.scss';
-import Navigation from '../ui/navigation/navigation';
-import SocialMedia from '../ui/socialMedia/socialMedia';
-import Logo from '../ui/logo/logo';
+import Navigation from '../navigation/navigation';
+import SocialMedia from '../socialMedia/socialMedia';
+import Logo from '../logo/logo';
 
 export default function Footer() {
   return (

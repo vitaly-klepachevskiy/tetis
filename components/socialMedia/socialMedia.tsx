@@ -1,4 +1,4 @@
-import Icon from '../icon';
+import Icon from '../ui/icon';
 import './socialMedia.scss';
 
 interface SocialMedias {

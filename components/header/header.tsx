@@ -1,9 +1,9 @@
 'use client';
 
 import './header.scss';
-import SocialMedia from '../ui/socialMedia/socialMedia';
-import Navigation from '../ui/navigation/navigation';
-import Logo from '../ui/logo/logo';
+import SocialMedia from '../socialMedia/socialMedia';
+import Navigation from '../navigation/navigation';
+import Logo from '../logo/logo';
 
 export default function Header() {
   // const [isOpen, setIsOpen] = useState(false);

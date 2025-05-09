@@ -1,6 +1,6 @@
 import Title from '@/components/title/title';
-import './designers.scss';
 import Button from '@/components/ui/button';
+import './designers.scss';
 
 const Designers = () => {
   return (

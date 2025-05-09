@@ -3,6 +3,7 @@ import Description from './components/sections/main/description';
 import Stages from './components/sections/main/stages';
 import Partners from './components/sections/main/partners';
 import Designers from './components/sections/main/designers';
+import Questions from './components/sections/main/questions';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Stages />
       <Partners />
       <Designers />
+      <Questions />
     </>
   );
 }
